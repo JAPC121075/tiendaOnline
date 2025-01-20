@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BEM Classes */
+.store {
+  @apply min-h-screen bg-gray-100;
+}
+
+.store__container {
+  @apply container mx-auto px-4 py-8;
+}
+
+.product-card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden;
+}
+
+.product-card__image-container {
+  @apply h-48 overflow-hidden;
+}
+
+.product-card__image {
+  @apply w-full h-full object-contain;
+}
+
+.product-card__content {
+  @apply p-4;
+}
+
+.product-card__title {
+  @apply text-lg font-semibold text-gray-800 truncate;
+}
+
+.product-card__description {
+  @apply text-sm text-gray-600 mt-1 h-12 overflow-hidden;
+}
+
+.product-card__rating {
+  @apply flex items-center mt-2;
+}
+
+.product-card__price {
+  @apply text-xl font-bold text-indigo-600;
+}
+
+.search-bar {
+  @apply relative mb-8;
+}
+
+.search-bar__input {
+  @apply w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500;
+}
+
+.category-filter {
+  @apply mb-8;
+}
+
+.category-filter__title {
+  @apply text-lg font-semibold mb-4;
+}
+
+.category-filter__buttons {
+  @apply flex flex-wrap gap-2;
+}
+
+.cart-drawer {
+  @apply fixed inset-0 z-50;
+}
+
+.cart-drawer__overlay {
+  @apply absolute inset-0 bg-black bg-opacity-50;
+}
+
+.cart-drawer__content {
+  @apply absolute right-0 top-0 h-full w-96 bg-white shadow-xl;
+}
